@@ -1,0 +1,88 @@
+/* Structure */
+body{
+    background: url(images/space2.png);
+    font-family:'Courier New', Courier, monospace
+}
+
+#content {
+    background: rgba(80, 81, 129, 0.2);
+    margin: 10px;
+    padding: 0px 5px;
+    border-radius: 16px;
+}
+
+#content #pictures {
+    width:50%;
+    position:absolute;
+    left:50%;
+}
+
+#content #table {
+    width:50%;
+    margin:10px;
+}
+
+/* Navigation */
+
+#main-nav a{
+    text-decoration: none;
+    background: #70D925;
+    color: black;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#main-nav a:hover{
+    background: #438216;
+
+}
+
+/* Images */
+img {
+    border:5px solid black;
+    border-radius: 16px;
+}
+
+/* Tables */
+table{
+    border-collapse: collapse;
+}
+th,
+td{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+th{
+    color:#85A0F2;
+    background: #3c3e73;
+}
+
+td{
+    color:#85A0F2;
+    background: #151a3a;
+}
+
+/* Typography */
+h1{
+    color: #ced9fa;
+    font-size: 28px;
+    
+}
+
+h2{
+    color: #6C72D9;
+}
+
+.links {
+    color: #85A0F2;
+    text-decoration: none;
+}
+
+.bullets {
+    color: white;
+}
+
+.words {
+    color:#85A0F2;
+}
