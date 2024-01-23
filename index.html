@@ -6,21 +6,57 @@
     </head>
     <body>
         <div id="content">
-            <h1><i>Christian Smith's</i> CSCE242:Web Development Class Page</h1>
-            <nav id="main-nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Pictures</a>
-                <a href="#">Contact Us</a>
-            </nav>
-            <p class="words">
-                In this class, students are tasked to learn to use HTML and CSS to design the front-end of a custom website of their making.  Towards the end of the course, students will learn to use node and server side JavaScript to store and retrieve server side data.  Overall, the students should come out of the course with some level of understanding of HTML, CSS, and Javascript.
-            </p>
-            <h2>Assignments</h2>
-            <ul>
-                <li class="bullets"><a class="links" href="csce242\assignments\01\index.html">Assignment 1</a></li>
-                <li class="bullets"><a class="links" href="csce242\assignments\02\index.html">Assignment 2</a></li>
-            </ul>
+            <header id="main-header">
+                <h1><i>Christian Smith's</i> CSCE242:Web Development Class Page</h1>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main-content">
+                <section id="class-des">
+                    <p class="words">
+                        In this class, students are tasked to learn to use HTML and CSS to design the front-end of a custom website of their making.  Towards the end of the course, students will learn to use node and server side JavaScript to store and retrieve server side data.  Overall, the students should come out of the course with some level of understanding of HTML, CSS, and Javascript.
+                    </p>
+                </section>
+                <h2 id="assign-header">Assignments</h2>
+                <div class="flex-container">
+                    <section class="assign-groupings">
+                        <a class="links" href="csce242\assignments\01\index.html">
+                            <article class="assign-border">
+                                <h4>Assignment 1 - Basic HTML</h4>
+                                <img src="images/europaclipper2.1.jpg" alt="Europa Clipper Logo" />
+                                <p class="words">This assignment covers the Europa Clipper space mission.  It was created to gain an understanding of base level of HTML.  It was updated after the completion of Assignment 2.</p>
+                            </article>
+                        </a>
+                    </section>
+                    <section class="assign-groupings">
+                        <a class="links" href="csce242\assignments\02\index.html">
+                            <article class="assign-border">
+                                <h4>Assignment 2 - Basic CSS</h4>
+                                <img src="images/Psyche.png" alt="Psyche Spacecraft">
+                                <p class="words">This assignment covers the Psyche space mission.  It was created to gain an understanding of basis CSS and style sheets.</p>
+                            </article>
+                        </a>
+                    </section>
+                    <section class="assign-groupings">
+                        <a class="links" href="csce242\assignments\03\index.html">
+                            <article class="assign-border">
+                                <h4>Assignment 3 - Page Layout</h4>
+                                <img src="images/swarm2.jpg" alt="Swarm Spacecraft">
+                                <p class="words">This assignment covers the Swarm space mission.  It was created to gain an understanding and establish page layouts.</p>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+            </main>
+            <footer id="main-footer">
+                <p>&copy; SmitChristian.com</p>
+            </footer>
         </div>
     </body>
 </html>
