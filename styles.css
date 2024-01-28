@@ -15,10 +15,19 @@ body{
     text-align: center;
 }
 
+.flex-container-row {
+    flex-direction: row;
+}
+
+.flex-container-col {
+    flex-direction: column;
+}
+
 /* Larger Resolutions */
 @media (min-width: 900px) {
     #class-des, 
-    .flex-container{
+    .flex-container-row,
+    .flex-container-col {
         display:flex;
     }
 
