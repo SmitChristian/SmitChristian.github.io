@@ -1,0 +1,302 @@
+/* Structure */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin:0px 0px 0px 0px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+
+.banner {
+    width:80%;
+    margin: auto;
+}
+
+#main-header{
+    background: linear-gradient(180deg, black 70%, #73000A 30%);
+}
+
+#college-footer {
+    background: #ECECEC;
+}
+
+#college-links {
+    background: #73000A;
+}
+
+#search-bar {
+    background: black;
+    height:30px;
+    width:290px;
+    border: 1px solid white;
+    position:absolute;
+    right:10%;
+    
+}
+
+#main-content {
+    margin: auto;
+    width:80%;
+    padding-top: 20px;
+}
+
+
+#college-header {
+    padding:10px 0px 10px 0px;
+}
+
+#highlights {
+    padding:20px;
+}
+
+.spotlight {
+    padding:0;
+    margin:0;
+}
+
+#intro-article {
+    margin-left:20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F8857E;
+}
+
+#enrollment {
+    border: 1px solid #F8857E;
+    margin-top: 20px;
+    border-left: 5px solid #73000A;
+}
+
+#support {
+    background:#ECECEC;
+    border-left: 5px solid #73000A;
+}
+
+#eng-picture {
+    background:url(images/465x465.gif);
+}
+
+.ball {
+    background-color:#73000A;
+    color:#73000A;
+    font-size:36px;
+    border: 1px solid white;
+    border-radius: 18px;
+    height:100px;
+    width:100px;
+    text-decoration: none;
+}
+
+.ball:hover {
+    transition: background .2s ease-in;
+    background:white;
+    color:white;
+    transition: padding .2s ease-in;
+    padding:5px;
+    border-radius: 23px;
+}
+
+
+.flexcontainer-row,
+.flexcontainer-row-spot {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.flexcontainer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexcontainer-row-spot {
+    padding-bottom:10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #F8857E;
+    align-items: flex-start;
+
+}
+
+
+/* Larger Resolutions */
+@media only screen and (max-width: 750px) {
+    #links-table { display: none; }
+    #main-content { margin: auto; width:95%; }
+    .flexcontainer-row {flex-direction: column;}
+}
+
+@media (min-width: 1450px) {
+    #main-content { margin:auto; width: 50%;}
+}
+
+
+
+/* Navigation */
+
+#main-nav li {
+    display:inline;
+    padding: 5px 0px 15px 5px;
+}
+#main-nav {
+    float:right;
+    margin: 5px 0px 5px 5px;
+}
+
+#foot-nav li {
+    display:inline;
+    padding:5px 0px 15px 5px;
+}
+
+#foot-nav {
+    margin:5px 0px 5px 5px;
+}
+
+#social-nav li{
+    display:inline;
+    padding: 5px 0px 15px 5px;
+}
+
+
+
+/* Tables */
+#l-table {
+    border-collapse: collapse;
+}
+
+#l-table td {
+    border-bottom: 1px solid #F8857E;
+    border-top: 1px solid #F8857E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Images */
+img{
+    max-width: 100%;
+    margin:auto;
+}
+
+#selected-dep {
+    background:#ECECEC;
+}
+
+/* Typography */
+
+tiny {
+    font-size:10px;
+}
+
+#main-nav a,li{
+    text-decoration: none;
+    color:white;
+    font-size: 11px;
+}
+
+#main-nav a:hover{
+    transition: background .2s ease-in;
+    background: #B33C44;
+}
+
+#search-bar::placeholder{
+    color:white;
+    text-align: left;
+    padding:5px;
+    font-weight: bold;
+}
+
+#search-bar:hover {
+    transition: background .2s ease-in;
+    background:white;
+}
+
+
+.li-none,
+.subtitle,
+.description,
+.high {
+    text-decoration:none;
+}
+
+.subtitle,
+.description {
+    color:black;
+    margin:5px;
+}
+
+.subtitle {
+    font-size:13px;
+}
+
+.description {
+    font-size: 12px;
+}
+
+#li-none-ch {
+    text-decoration: none;
+    font-size: 19px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.t-links {
+    text-decoration:none;
+    color:black;
+}
+
+.t-links:hover {
+    transition: background .2s ease-in;
+    background: #B33C44;
+    color: white;
+}
+
+.flexcontainer-row-spot:hover {
+    transition: background .2s ease-in;
+    background: #F0F0F0;
+}
+
+.t-main {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.t-sec {
+    padding-left: 10px;
+    padding-right:5px;
+    border-left: 2px solid #F8857E;
+}
+
+.t-trd {
+    padding-left: 15px;
+    padding-right: 5px;
+    border-left: 2px solid #F8857E;
+}
+
+#my-cec {
+    text-align: right;
+    padding-top:10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.des-words {
+    font-size: 15px;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.bullets {
+    list-style-type:none;
+}
