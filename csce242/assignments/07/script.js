@@ -6,13 +6,13 @@ window.onload = () => {
             document.getElementById("image-click").src = "https://SmitChristian.github.io/csce242/assignments/07/images/swarm2.jpg";
             document.getElementById("words-click").innerHTML = "The most immediate threat in the cosmic vacuum is oxygen deprivation. Assuming that you dont hold your breath during decompression, it will take about 15 seconds for your O2 deprived blood to get to your brain. When this happens, youll pass out…and then youll die.";
             document.getElementById("image-click-header").innerHTML = "Asphyxiation!"
-        } else if (document.getElementById("image-click").src == "file:///D:/Christian%20School%20Work/Senior%20Year/Semester%202/Web%20Development/Github/SmitChristian.github.io/csce242/assignments/07/images/swarm2.jpg"){
-            document.getElementById("image-click").src = "file:///D:/Christian%20School%20Work/Senior%20Year/Semester%202/Web%20Development/Github/SmitChristian.github.io/csce242/assignments/07/images/Psyche.png";
+        } else if (document.getElementById("image-click").src == "https://SmitChristian.github.io/csce242/assignments/07/images/swarm2.jpg"){
+            document.getElementById("image-click").src = "https://SmitChristian.github.io/csce242/assignments/07/images/Psyche.png";
             document.getElementById("words-click").innerHTML = "After about 10 seconds, the moisture in your body will start to evaporate. This is known as ebullism and it happens because the reduction in pressure causes the boiling point of your bodily fluids to decrease. And if evaporating body fluids doesnt sound terribly pleasant, well, its because its not.";
             document.getElementById("image-click-header").innerHTML = "Evaporation!"
         }
         else {
-            document.getElementById("image-click").src = "file:///D:/Christian%20School%20Work/Senior%20Year/Semester%202/Web%20Development/Github/SmitChristian.github.io/csce242/assignments/07/images/radiation.jpg";
+            document.getElementById("image-click").src = "https://SmitChristian.github.io/csce242/assignments/07/images/radiation.jpg";
             document.getElementById("words-click").innerHTML = "Space radiation can lead to other effects. Radiation can alter the cardiovascular system, damaging the heart, harden and narrow arteries, and/or eliminate some of the cells in linings of the blood vessels, leading to cardiovascular disease.";
             document.getElementById("image-click-header").innerHTML = "Radiation!"
         }
