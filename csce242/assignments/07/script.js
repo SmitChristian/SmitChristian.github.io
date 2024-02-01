@@ -8,7 +8,7 @@ window.onload = () => {
             document.getElementById("words-click").innerHTML = "The most immediate threat in the cosmic vacuum is oxygen deprivation. Assuming that you dont hold your breath during decompression, it will take about 15 seconds for your O2 deprived blood to get to your brain. When this happens, youll pass out…and then youll die.";
             document.getElementById("image-click-header").innerHTML = "Asphyxiation!"
         } else if (document.getElementById("image-click").src == "https://smitchristian.github.io/csce242/assignments/07/images/no-air.jpg"){
-            document.getElementById("image-click").src = "https:/smitchristian.github.io/csce242/assignments/07/images/Psyche.png";
+            document.getElementById("image-click").src = "https:/smitchristian.github.io/csce242/assignments/07/images/evap.jpg";
             document.getElementById("words-click").innerHTML = "After about 10 seconds, the moisture in your body will start to evaporate. This is known as ebullism and it happens because the reduction in pressure causes the boiling point of your bodily fluids to decrease. And if evaporating body fluids doesnt sound terribly pleasant, well, its because its not.";
             document.getElementById("image-click-header").innerHTML = "Evaporation!"
         }
