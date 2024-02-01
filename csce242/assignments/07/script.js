@@ -2,7 +2,6 @@ window.onload = () => {
 
     // Image Swapping
     document.getElementById("image-click").onclick = () => {
-        alert(document.getElementById("image-click").src);
         if (document.getElementById("image-click").src == "https://smitchristian.github.io/csce242/assignments/07/images/radiation.jpg"){
             document.getElementById("image-click").src = "https://smitchristian.github.io/csce242/assignments/07/images/no-air.jpg";
             document.getElementById("words-click").innerHTML = "The most immediate threat in the cosmic vacuum is oxygen deprivation. Assuming that you dont hold your breath during decompression, it will take about 15 seconds for your O2 deprived blood to get to your brain. When this happens, youll pass out…and then youll die.";
@@ -29,7 +28,7 @@ window.onload = () => {
     let starKeep = +0;
     document.getElementById("add-star").onclick = () => {
         let img = document.createElement("img");
-        img.src = "file:///D:/Christian%20School%20Work/Senior%20Year/Semester%202/Web%20Development/Github/SmitChristian.github.io/csce242/assignments/07/images/star-image.jpg";
+        img.src = "https://smitchristian.github.io/csce242/assignments/07/images/star-image.jpg";
         document.getElementById("star-contain").appendChild(img);
         starKeep += 1;
         let newHeight = oldHeight + 695;
