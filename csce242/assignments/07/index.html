@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <h1>Why Space Can and Will Kill You! &#9786;</h1>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main-content">
+                <h2>Just a Bit of Fun Facts!</h2>
+                <div id="first-row-content" class="flex-container-row">
+                    <section class="first-row-section">
+                        <h3 id="image-click-header">Radiation!</h3>
+                        <h4>Click on the Image Below!</h4>
+                        <img src="images/radiation.jpg" id="image-click">
+                        <p id="words-click" class="words">Radiation can alter the cardiovascular system, damaging the heart, harden and narrow arteries, and/or eliminate some of the cells in linings of the blood vessels, leading to cardiovascular disease.</p>
+                    </section>
+                    <section class="first-row-section">
+                        <h3>Floating Around!</h3>
+                        <img src="images/floating.jpg" id="image-rotate">
+                        <p class="words">Initially, you may simply float away like a statue, watching helplessly as the safety of your space station recedes slowly from your sight. You could also begin to spin, ensuring that you’re dealt a nice dose of disorientating nausea alongside your ever-growing existential crisis. If you happened to be close to Earth when your accident occurs, you could well be sucked back into your home planet’s atmosphere. Which sounds a stroke of luck, until you realise you’d be burnt to a crisp upon re-entry.</p>
+                        <input type="range" min="-180" max="180" value="0" class="slider" id="image-rotater">
+                    </section>
+                    <section class="first-row-section" id="add-star">
+                        <h3>Click to Add Quirky Stars!</h3>
+                        <div class="flex-container-col" id="star-contain" style="width: 50px; height: 50px; margin:auto">
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer id="main-footer">
+                <p>&copy; SmitChristian.com</p>
+            </footer>
+        </div>
+    </body>
+</html>
