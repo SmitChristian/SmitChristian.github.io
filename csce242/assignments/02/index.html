@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <p class="words">Christian Smith : CSCE242</p>
         <title>A:01</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div id="content">
-            <h1>A Brief Overview of the Psyche Mission</h1>
-            <nav id="main-nav">
-                <a href="../../../index.html">Home</a>
-                <a href="#">About</a>
-                <a href="#">Pictures</a>
-                <a href="#">Contact Us</a>
-            </nav>
-            <p class="words">
-                The Psyche mission is a journey to a unique metal-rich asteroid orbiting the Sun between Mars and Jupiter. What makes the asteroid Psyche unique is that it appears to be the exposed nickel-iron core of an early planet, one of the building blocks of our solar system.  Deep within rocky, terrestrial planets - including Earth - scientists infer the presence of metallic cores, but these lie unreachably far below the planets' rocky mantles and crusts. Because we cannot see or measure Earth's core directly, Psyche offers a unique window into the violent history of collisions and accretion that created terrestrial planets.  The mission is led by Arizona State University. NASA's Jet Propulsion Laboratory is responsible for mission management, operations, and navigation. The spacecraft's solar-electric propulsion chassis will be built by Maxar (formerly SSL) with a payload that includes an imager, magnetometer, and a gamma-ray spectrometer.
-
-            <p class="words">
-                The Psyche mission will test a sophisticated new laser communication technology that encodes data in photons at near-infrared wavelengths (rather than radio waves) to communicate between a probe in deep space and Earth. Using light instead of radio allows the spacecraft to communicate more data in a given amount of time. The DSOC team is based at the Jet Propulsion Laboratory.  Bolted to the side of the Psyche spacecraft is a pioneering technology demonstration: NASA’s Deep Space Optical Communications experiment, or DSOC. Using a near-infrared laser, DSOC will be the agency’s first test of high-bandwidth optical communications between Earth and distances far exceeding the Moon.   To meet the demands of future space missions relying on current state-of-the-art radio systems, huge increases in hardware size, mass, and power would be required to transmit and receive high-bandwidth data such as high-definition images and video. Optical communications could potentially provide this essential bandwidth enhancement without requiring such hardware increases. Much like upgrading old telecommunications infrastructure on Earth with fiber optics to meet growing data demands, going from radio communications to laser communications would increase current data rates 10 to 100 times.  DSOC is not intended to relay Psyche mission data since the technology demonstration is planned for the first two years of the spacecraft’s cruise. But if it proves successful, the technology will be used by future human and robotic spacecraft to transmit huge volumes of science data, allowing more innovative space mission concepts to take flight. Ultimately, DSOC may pave the way for broadband communications that will help support humanity’s next giant leap: When NASA sends astronauts to Mars.  
-            </p>
-            <h2>Additional Pictures and Information</h2>
-            <div id="pictures">
-                <img src="images/Psyche.png" alt="Psyche Spacecraft" />
-                <img src="images/orbit.png" alt="Psyche Mission Orbit Diagram" />
-            </div>
-            <div id="table">
-                <p class="words"> 
-                    Here is some tabulated data!
-                    <table>
-                        <tr>
-                            <th>Description</th>
-                            <th>Value</th>
-                            <th>Unit</th>
-                        </tr>
-                        <tr>
-                            <td>Agency</td>
-                            <td>NASA</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td>Launch Date</td>
-                            <td>13 Oct. 2023</td>
-                            <td>N/A</td>
-                        </tr>
-                        <tr>
-                            <td>Size</td>
-                            <td>81 x 24</td>
-                            <td>Feet</td>
-                        </tr>          
-                        <tr>
-                            <td>Mass</td>
-                            <td>6,056</td>
-                            <td>Pounds</td>
-                        </tr>
-                        <tr>
-                            <td>Power</td>
-                            <td>2.3</td>
-                            <td>Watts</td>
-                        </tr>
-                        <tr>
-                            <td>Propulsion</td>
-                            <td>240</td>
-                            <td>Milinewtons</td>
-                        </tr>
-                    </table>
-                </p>
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../01/index.html">Assignment 1</a>
+                        <a href="../02/index.html">Assignment 2</a>
+                        <a href="../03/index.html">Assignment 3</a>
+                        <a href="../04/index.html">Assignment 4</a>
+                        <a href="../07/index.html">Assignment 7</a>
+                        <a href="../08/index.html">Assignment 8</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>A Brief Overview of the Psyche Mission</h1>
+            </header>
+            <main>
                 <p class="words">
-                    All information is nearly directly sourced from these sources
-                    <ul>
-                        <li class="bullets"><a class="links" href="https://www.jpl.nasa.gov/missions/psyche">Source 1 : Psyche Mission Overview NASA-JPL</a></li>
-                        <li class="bullets"><a class="links" href="https://science.nasa.gov/mission/psyche/">Source 2 : Psyche Mission Overview NASA</a></li>
-                        <li class="bullets"><a class="links" href="https://psyche.asu.edu/">Source 3 : Psyche Mission Follow Up from Arizona State University</a></li>
-                    </ul>
+                    The Psyche mission is a journey to a unique metal-rich asteroid orbiting the Sun between Mars and Jupiter. What makes the asteroid Psyche unique is that it appears to be the exposed nickel-iron core of an early planet, one of the building blocks of our solar system.  Deep within rocky, terrestrial planets - including Earth - scientists infer the presence of metallic cores, but these lie unreachably far below the planets' rocky mantles and crusts. Because we cannot see or measure Earth's core directly, Psyche offers a unique window into the violent history of collisions and accretion that created terrestrial planets.  The mission is led by Arizona State University. NASA's Jet Propulsion Laboratory is responsible for mission management, operations, and navigation. The spacecraft's solar-electric propulsion chassis will be built by Maxar (formerly SSL) with a payload that includes an imager, magnetometer, and a gamma-ray spectrometer.
+    
+                <p class="words">
+                    The Psyche mission will test a sophisticated new laser communication technology that encodes data in photons at near-infrared wavelengths (rather than radio waves) to communicate between a probe in deep space and Earth. Using light instead of radio allows the spacecraft to communicate more data in a given amount of time. The DSOC team is based at the Jet Propulsion Laboratory.  Bolted to the side of the Psyche spacecraft is a pioneering technology demonstration: NASA’s Deep Space Optical Communications experiment, or DSOC. Using a near-infrared laser, DSOC will be the agency’s first test of high-bandwidth optical communications between Earth and distances far exceeding the Moon.   To meet the demands of future space missions relying on current state-of-the-art radio systems, huge increases in hardware size, mass, and power would be required to transmit and receive high-bandwidth data such as high-definition images and video. Optical communications could potentially provide this essential bandwidth enhancement without requiring such hardware increases. Much like upgrading old telecommunications infrastructure on Earth with fiber optics to meet growing data demands, going from radio communications to laser communications would increase current data rates 10 to 100 times.  DSOC is not intended to relay Psyche mission data since the technology demonstration is planned for the first two years of the spacecraft’s cruise. But if it proves successful, the technology will be used by future human and robotic spacecraft to transmit huge volumes of science data, allowing more innovative space mission concepts to take flight. Ultimately, DSOC may pave the way for broadband communications that will help support humanity’s next giant leap: When NASA sends astronauts to Mars.  
                 </p>
-            </div>
+                <h2>Additional Pictures and Information</h2>
+                <div id="pictures">
+                    <img src="images/Psyche.png" alt="Psyche Spacecraft" />
+                    <img src="images/orbit.png" alt="Psyche Mission Orbit Diagram" />
+                </div>
+                <div id="table">
+                    <p class="words"> 
+                        Here is some tabulated data!
+                        <table>
+                            <tr>
+                                <th>Description</th>
+                                <th>Value</th>
+                                <th>Unit</th>
+                            </tr>
+                            <tr>
+                                <td>Agency</td>
+                                <td>NASA</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Launch Date</td>
+                                <td>13 Oct. 2023</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Size</td>
+                                <td>81 x 24</td>
+                                <td>Feet</td>
+                            </tr>          
+                            <tr>
+                                <td>Mass</td>
+                                <td>6,056</td>
+                                <td>Pounds</td>
+                            </tr>
+                            <tr>
+                                <td>Power</td>
+                                <td>2.3</td>
+                                <td>Watts</td>
+                            </tr>
+                            <tr>
+                                <td>Propulsion</td>
+                                <td>240</td>
+                                <td>Milinewtons</td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p class="words">
+                        All information is nearly directly sourced from these sources
+                        <ul>
+                            <li class="bullets"><a class="links" href="https://www.jpl.nasa.gov/missions/psyche">Source 1 : Psyche Mission Overview NASA-JPL</a></li>
+                            <li class="bullets"><a class="links" href="https://science.nasa.gov/mission/psyche/">Source 2 : Psyche Mission Overview NASA</a></li>
+                            <li class="bullets"><a class="links" href="https://psyche.asu.edu/">Source 3 : Psyche Mission Follow Up from Arizona State University</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </main>
+            
         </div>
     </body>
 </html>

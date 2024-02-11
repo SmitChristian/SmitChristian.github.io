@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="../../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../../index.html">Project Requirements</a>
+                        <a href="../../projectplanning/index.html">Project Planning</a>
+                        <a href="../../conceptualdesign/index.html">Conceptual Design</a>
+                        <a href="../../detaileddesign/index.html">Detailed Design</a>
+                        <a href="../../construction/index.html">Construction</a>
+                        <a href="../../finalization/index.html">Finalization</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>Functional Flow Diagram </h1>
+            </header>
+            <main id="main-content">
+                <p>The functional flow diagram provides a more detailed and chronological breakdown of the functions needed to be done by the CubeSat. Instead of breaking down tasks into subtasks, this diagram breaks the mission down into chronological stages and the subtasks that need to be completed to complete the mission. Due to the nature of the CubeSat’s mission, there isn’t a long string of distinct tasks but rather a continuous cycle of repeating several tasks simultaneously, taking pictures, converting them to data, reading the device status, and relaying it all to the ground station(s). As previously mentioned, the launch and deployment of the CubeSat is not done by the CubeSat itself but by being loaded on a rocket not designed by this team. Note that the power generating tasks for the ground station are independent of the ones listed on the chart as collecting power for the ground station is easy and accessible. Also, if in a real-life usage of this CubeSat there are multiple ground stations receiving data, the data can be transmitted between them using conventional sources.</p>
+                <img src="images/functionalflowdiagram.png">
+            </main>
+            <footer id="main-footer">
+                <p>&copy; SmitChristian.com</p>
+            </footer>
+        </div>
+    </body>
+</html>

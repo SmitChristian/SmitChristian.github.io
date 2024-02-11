@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="../../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../../index.html">Project Requirements</a>
+                        <a href="../../projectplanning/index.html">Project Planning</a>
+                        <a href="../../conceptualdesign/index.html">Conceptual Design</a>
+                        <a href="../../detaileddesign/index.html">Detailed Design</a>
+                        <a href="../../construction/index.html">Construction</a>
+                        <a href="../../finalization/index.html">Finalization</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>Risk Analysis</h1>
+            </header>
+            <main id="main-content">
+                <p>Each concept has both shared and individual risks. The red-zone risks are minimal for this project.  Most catastrophic failures that could occur are unlikely enough to provide minimal consideration into their prevention.  Each configuration shares one red-zone risk that must be accounted for.  Configuration 3 has one additional red-zone risk that will also be accounted for conceptually in this section.</p>
+                <p>Software failure is the most probable catastrophic risk of the project for each configuration.  The risk simplifies to the developed code not being properly debugged before the mission.  Software error during the mission could result in loss of data or total loss of operational capability.  To mitigate this risk, more time needs to be allocated to developing the software of the CubeSat.  The code development process will possess stages in of itself that each need ample time to prevent serious error during operation.  Particularly, the final stage of the code development process: the debugging phase, will need extended amount of time to mitigate this red-zone risk.  The requirement of more time will result in a focus on the communications and software architecture first in the detailed design stage of this project.</p>
+                <h2>Configuration 1</h2>
+                <img src="images/conc1heat.png">
+                <img src="images/conc1table.png">
+                <h2>Configuration 2</h2>
+                <img src="images/conc2heat.png">
+                <img src="images/conc2table.png">
+                <h2>Configuration 3</h2>
+                <img src="images/conc3heat.png">
+                <img src="images/conc3table.png">
+                <p>For configuration 3, the additional red-zone risk represents the additional complexity of the design of the configuration.  There are limited solutions to the inherent risk taken when designing something new instead of using standardized tools and equipment.  The mitigation of this red-zone risk, if this concept is chosen, would be bringing in an expert to act as a consultant in the custom board design process.  This would increase the budget expenses but would mitigate the red-zone risk somewhat.</p>
+            </main>
+            <footer id="main-footer">
+                <p>&copy; SmitChristian.com</p>
+            </footer>
+        </div>
+    </body>
+</html>

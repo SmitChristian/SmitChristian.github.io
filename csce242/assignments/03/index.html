@@ -3,19 +3,29 @@
     <head>
         <title>Christian's CSCE242 Website</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div id="content">
             <header id="main-header">
-                <h1>A Brief Overview of the Swarm Mission</h1>
-                <nav id="main-nav">
-                    <ul>
-                        <li><a href="../../../index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Pictures</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                <nav class="topnav">
+                    <a href="../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../01/index.html">Assignment 1</a>
+                        <a href="../02/index.html">Assignment 2</a>
+                        <a href="../03/index.html">Assignment 3</a>
+                        <a href="../04/index.html">Assignment 4</a>
+                        <a href="../07/index.html">Assignment 7</a>
+                        <a href="../08/index.html">Assignment 8</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </nav>
+                <h1>A Brief Overview of the Swarm Mission</h1>
             </header>
             <main id="main-content">
                 <article class="assign-border">
