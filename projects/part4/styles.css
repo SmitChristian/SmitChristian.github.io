@@ -23,7 +23,7 @@
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background: #004900;
     display: block;
     position: absolute;
     right: 0;
@@ -51,16 +51,19 @@
     text-align: center;
     align-items: center;
   }
-
-  #main-content {
-    margin: 20% 10% 10% 10%;
+  
+  #content {
+    width:90%;
+    margin: auto;
   }
+
+
 
   h1, p, h2, section {
     background:white;
     text-align: center;
-    width:80%;
-    margin:10px 10% 10px 10%;
+
+
     
     padding:10px;
     border-radius: 10px;
