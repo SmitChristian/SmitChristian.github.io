@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+
+#hamburger {
+  fill: white;
+  height: 5%;
+  width: 5%;
+  margin: 0px;
+  cursor: pointer;
+  position:fixed;
+  top:20%;
+  left:0%;
+}
+
+#sidebar {
+  width: 0px;
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow:hidden;
+  transition: width 0.5s ease;
+}
+
+.sidebar-item {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 5px;
+  text-align: left;
+}
+
+
+.sidebar-item > div {
+  padding: 0 1em;
+}
+
+.sidebar-item svg {
+  flex-shrink: 0;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.top-bottom-border {
+    border-top: 2px solid white;
+    border-bottom : 2px solid white;
+    margin: 20px 0 20px 0;
+}
+
+.fade-out-image {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 100;}
+  100% {opacity: 0;}
+}
+
+h1, p, h2, ul {
+  background:white;
+  text-align: center;
+
+
+  
+  padding:10px;
+  border-radius: 10px;
+}

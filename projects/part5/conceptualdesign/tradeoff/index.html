@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="../../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../../index.html">Project Requirements</a>
+                        <a href="../../projectplanning/index.html">Project Planning</a>
+                        <a href="../../conceptualdesign/index.html">Conceptual Design</a>
+                        <a href="../../detaileddesign/index.html">Detailed Design</a>
+                        <a href="../../construction/index.html">Construction</a>
+                        <a href="../../finalization/index.html">Finalization</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>Tradeoff Analysis</h1>
+            </header>
+            <main id="main-content">
+                <p>To create the three concept choices, the complexity, weaknesses, and strengths of each logic board were considered. For example, the Arduino is incapable of multitasking which would make it exceptionally difficult to have an active control system that requires constant inputs and adjustments.
+                    With the already lower power consumption of the Arduino, it was opted to neglect solar panels as it would be easy to have a battery bank capable of supplying power for the entire mission.  With the limited processing power of the Arduino, it was opted for this configuration to have passive control systems. Since the configuration does not need solar panels, it was opted to try and make the design aero stabilized using passive fins/rudders.
+                    </p>
+                <p>The second configuration is based around using a Raspberry Pi. The Raspberry Pi is capable of multitasking and therefore the concept based on it uses active control as it would be the most capable of running the code to correct the orientation and yield the most accurate photos. This design also utilizes solar panels as well as a larger battery bank. The 
+                    larger battery bank and solar array is required to help power the higher power consumption processor as well as the motors required for the control system.
+                    </p>
+                <p>
+                    The last configuration to be considered was one based on custom chips and boards that would have to be soldiered together. This concept is the most complex but has the possibility to be the most customizable. With the preliminary research done into the components required, it does seem doable but would have a rather tight time frame. To keep the board design as simple as possible, it was elected to use passive control. Since this configuration will have a lower power draw as a result, it will run off a smaller battery bank and a small solar array. This should yield the longest potential mission time.
+                </p>
+                <img src="images/tradeofftable.png">
+            </main>
+            <footer id="main-footer">
+                <p>&copy; SmitChristian.com</p>
+            </footer>
+        </div>
+    </body>
+</html>

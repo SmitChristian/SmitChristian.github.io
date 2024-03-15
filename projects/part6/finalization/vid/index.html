@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="sidebar.css" />
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="../../../../index.html" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../../index.html">Project Requirements</a>
+                        <a href="../../projectplanning/index.html">Project Planning</a>
+                        <a href="../../conceptualdesign/index.html">Conceptual Design</a>
+                        <a href="../../detaileddesign/index.html">Detailed Design</a>
+                        <a href="../../construction/index.html">Construction</a>
+                        <a href="../../finalization/index.html">Finalization</a>
+                        <a href="../../contactpage/index.html">Contact Me</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>Final Videos</h1>
+            </header>
+            <main id="main-content">
+                <section-main id="sec-main">
+                    <!-- "Sidebar Menu"-->
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="24" 
+                    viewBox="0 -960 960 960" 
+                    width="24"
+                    id="hamburger">
+                    <path d="M500-640v320l160-160-160-160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-80v-560H200v560h120Zm80 0h360v-560H400v560Zm-80 0H200h120Z"/>
+                    </svg>
+
+                    <div id="overlay"></div>
+                    <div id="sidebar" class="flex-container-col">
+                        <form id="side_form">
+                            <h3 class="sidebar-item">Add data to this page</h3>
+                            <div class="sidebar-item"><label for="side_name">Title of new content?</label></div>
+                            <div class="sidebar-item"><input type="text" name="side_name" placeholder="Title here" required></div>
+                            <div class="sidebar-item"><label for="side_data1">What information would you like to add?</label></div>
+                            <div class="sidebar-item"><textarea name="side_data1" placeholder="Your information here" required></textarea></div>
+                            <div class="sidebar-item"><label for="side_image1">Choose an image to add if necessary.</label></div>
+                            <div class="sidebar-item"><input type="file" id="side_image1_id" name="side_image1"></div>
+                            <div class="sidebar-item"><label for="side_data2">Additional information?</label></div>
+                            <div class="sidebar-item"><textarea name="side_data2" placeholder="Your additional information here"></textarea></div>
+                            <div class="sidebar-item"><label for="side_image2">Additional image?</label></div>
+                            <div class="sidebar-item"><input type="file" id="side_image2_id" name="side_image2"></div>
+                            <div class="sidebar-item"><label for="side_date">When was this data added?</label></div>
+                            <div class="sidebar-item"><input type="date" name="side_date" required></div>
+                            <button id="side_submit_button" type="submit" class="sidebar-item">Submit</button>
+
+                            <div id="side_result" class="sidebar-item"></div>
+                        </form>
+                        
+                    </div>
+
+                    <!-- Page Content-->
+                    <p>To be developed soon! To make it up to you here is some cute bunnies!</p>
+                <img src="images/cuteBunny.jpg">
+            </section-main>
+            </main>
+            <footer>
+                <p>&copy; SmitChristian.com</p>
+            </footer>
+        </div>
+        <script src="sidebar.js"></script>
+    </body>
+</html>
