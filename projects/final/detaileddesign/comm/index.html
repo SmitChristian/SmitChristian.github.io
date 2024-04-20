@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="sidebar.css" />
+        <title>Christian's CSCE242 Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <header id="main-header">
+                <nav class="topnav">
+                    <a href="https://smitchristian.github.io/" class="active">Home Page</a>
+                    <!-- Navigation links (hidden by default) -->
+                    <div id="myLinks">
+                        <a href="../..">Project Requirements</a>
+                        <a href="../../projectplanning">Project Planning</a>
+                        <a href="../../conceptualdesign">Conceptual Design</a>
+                        <a href="../../detaileddesign">Detailed Design</a>
+                        <a href="../../construction">Construction</a>
+                        <a href="../../finalization">Finalization</a>
+                        <a href="../../contactpage">Contact Me</a>
+                    </div>
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+                <h1>Communications</h1>
+            </header>
+            <main id="main-content">
+                <section-main id="sec-main">
+
+                    <!-- Deletion Modal -->
+                    <div id="del-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeDelModal()">&times;</span>
+                            <h1>Are you sure you want to delete this?</h1>
+                            <button id="yes-del-button" onclick="delData()">Yes</button>
+                            <button id="no-del-button" onclick="closeDelModal()">No</button>
+                        </div>
+                    </div>
+
+                    <!-- "Sidebar Menu"-->
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    height="24" 
+                    viewBox="0 -960 960 960" 
+                    width="24"
+                    id="hamburger">
+                    <path d="M500-640v320l160-160-160-160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm120-80v-560H200v560h120Zm80 0h360v-560H400v560Zm-80 0H200h120Z"/>
+                    </svg>
+
+                    <div id="overlay"></div>
+                    <div id="sidebar" class="flex-container-col">
+                        <form id="side_form">
+                            <input type="hidden" name="_id" value="-1">
+                            <input type="hidden" name="phase" value="3">
+                            <input type="hidden" name="page" value="3">
+                            <h3 class="sidebar-item" id="dataTitle">Add data to this page</h3>
+                            <label for="title" class="sidebar-item">Title of new content?</label>
+                            <input type="text" name="title" placeholder="Title here" class="sidebar-item" required>
+                            <label for="firstP" class="sidebar-item">What information would you like to add?</label>
+                            <textarea name="firstP" placeholder="Your information here" class="sidebar-item" required></textarea>
+                            <label for="secondP" class="sidebar-item">Additional information?</label>
+                            <textarea name="secondP" placeholder="Your additional information here" class="sidebar-item"></textarea>
+                            <label for="side_date" class="sidebar-item">When was this data added?</label>
+                            <input type="date" name="date" class="sidebar-item" required>
+                            <button id="side_submit_button" type="submit" class="sidebar-item">Submit</button>
+
+                            <div id="side_result" class="sidebar-item"></div>
+                        </form>
+                        
+                    </div>
+
+                    <!-- Page Content-->
+                    <p>The communications system is tasked with sending and receiving the data prepared by the processor.  LoRa (Long Range) radio communication was chosen with the range, bit rate, and complexity being considered.  LoRa communication is based on spread spectrum modulations techniques derived from chirp spread spectrum technology.  For US communications, LoRa uses the license-free sub-gigahertz radio frequency bands US915 which operates between 902-928 MHz. The bit rate and range of communications vary between LoRa transceiver and receiver products.  For this design, a Waveshare SX1262 LoRa transceiver HAT is used.  The transceiver has a radio rate range of 0.3 kbps – 62.5 kbps depending on range and package characteristics.  The transmit power is 22 dBm with power consumption of 133 mA during transmission.  The maximum range of transmission for this transceiver is 5 km.  However, give the large nature of the data being transmitted, the maximum range allowed for transmission of the images within a reasonable time is less than 500 meters.  </p>
+                    <p>The method of sending the data is vital to the proper operation of the CubeSat during its mission.  The image taken by the Imaging subsystem must be processed into a format that the SX1262 LoRa transceiver can send and receive without high bit rate error or total failure.  This constraint requires the CPU subsystem to process the image into hexadecimal code so that the image can be sent in packets of data.  The maximum packet length that can be sent by the transceiver is 240 bytes.  Of these 240 bytes, the leading 16 bytes and tailing 8 bytes will be used as an address for forward error correction techniques.  With large packets there is substantial bit rate error that must be addressed.  This error can be catastrophic to the mission by ruining any image that is transmitted. </p>
+                <section id="add-Ables"></section>
+            </section-main>
+            </main>
+           
+        </div>
+        <script src="sidebar.js"></script>
+    </body>
+</html>
